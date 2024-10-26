@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  @apply bg-transparent w-2;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-secondary-light rounded-full;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  @apply bg-transparent;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  @apply bg-secondary-light;
+}
+
+.btn-ghost {
+  @apply h-9 w-9 rounded-full flex items-center justify-center transition-all ease-in duration-150 hover:bg-secondary-light/20;
+}
+
+.form-input {
+  @apply w-full focus:outline-primary border-2 border-secondary-light/50 outline-[2px] duration-150 ease-in shadow-sm py-2 px-3 rounded-[5px] text-secondary/80;
+}
+
+.card {
+  @apply bg-white rounded-[16px];
+}
