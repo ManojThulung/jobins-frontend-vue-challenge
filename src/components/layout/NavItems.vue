@@ -16,8 +16,6 @@ const props = defineProps({
   },
 });
 
-console.log("use router", route.path);
-
 const handleClose = () => {
   if (props.setOpen) {
     props.setOpen();
