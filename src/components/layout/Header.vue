@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { MenuIcon } from "../../assets/icon";
 import { formatHeaderText } from "../../lib/helper";
@@ -10,7 +10,7 @@ import Notification from "./Notification.vue";
 const showSidebar = ref(false);
 const route = useRoute();
 
-const headerTitle = formatHeaderText(route.path);
+// const headerTitle = formatHeaderText(route.path);
 
 function toggleSidebar() {
   showSidebar.value = !showSidebar.value;
@@ -26,7 +26,7 @@ function toggleSidebar() {
       >
         <MenuIcon class="scale-x-[-1]" />
       </button>
-      {{ headerTitle }}
+      {{ formatHeaderText(route.path) }}
     </h1>
     <div class="flex gap-4 items-center">
       <Notification />

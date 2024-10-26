@@ -1,11 +1,11 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, onMounted } from "vue";
 import { NavbarData } from "../../constant/navigation";
 import { useRoute, RouterLink } from "vue-router";
 
 const route = useRoute();
 
-defineProps({
+const props = defineProps({
   isCollapse: {
     type: Boolean,
     default: false,
@@ -15,6 +15,14 @@ defineProps({
     default: null,
   },
 });
+
+console.log("use router", route.path);
+
+const handleClose = () => {
+  if (props.setOpen) {
+    props.setOpen();
+  }
+};
 </script>
 
 <template>
@@ -35,7 +43,7 @@ defineProps({
         {{ navbar.section }}
       </h2>
       <ul v-for="nav in navbar.child" :key="nav.name">
-        <RouterLink :to="nav.path">
+        <RouterLink :to="nav.path" @click="handleClose">
           <li
             :class="[
               'flex flex-nowrap gap-2 items-center py-2 text-[15px] px-2 rounded-[6px] transition-all ease-in-out duration-300 hover:bg-[#F3F4F8]/60 text-ellipsis',

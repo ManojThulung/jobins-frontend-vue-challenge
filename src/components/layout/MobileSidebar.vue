@@ -77,7 +77,7 @@ defineProps({
                     </button>
                   </div>
 
-                  <NavItems :setOpen="toggleOpen" />
+                  <NavItems :isCollapse="false" :setOpen="toggleOpen" />
                 </div>
               </DialogPanel>
             </TransitionChild>
