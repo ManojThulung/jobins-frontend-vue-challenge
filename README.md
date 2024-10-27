@@ -2,7 +2,7 @@
 
 This project is a recreation of an interactive web page, developed using **Vue.js** and **Tailwind CSS** as part of the JoBins frontend coding challenge. The page closely follows the design and coding guidelines provided, based on a Figma file.
 
-### [Live Demo](https://jobins-frontend-challenge-mj.vercel.app/) - [url](https://jobins-frontend-challenge-mj.vercel.app/)
+### [Live Demo](https://jobins-frontend-vue-challenge.vercel.app/) - [url](https://jobins-frontend-vue-challenge.vercel.app/)
 
 ## 1. Project Introduction
 
