@@ -1,14 +1,14 @@
 <script setup></script>
 
 <template>
-  <div className="animate-slide-up flex flex-col min-h-[80vh] gap-4">
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      <div className="h-16 card w-full" />
-      <div className="h-16 card w-full" />
-      <div className="h-16 card w-full" />
-      <div className="h-16 card w-full" />
+  <div class="animate-slide-up flex flex-col min-h-[80vh] gap-4">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="h-16 card w-full" />
+      <div class="h-16 card w-full" />
+      <div class="h-16 card w-full" />
+      <div class="h-16 card w-full" />
     </div>
 
-    <div className="flex-grow w-full card" />
+    <div class="flex-grow w-full card" />
   </div>
 </template>

@@ -14,7 +14,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div className="relative w-full xs:w-[260px] custom-datepicker">
+  <div class="relative w-full xs:w-[260px] custom-datepicker">
     <VueDatePicker
       v-model="dateRange"
       range

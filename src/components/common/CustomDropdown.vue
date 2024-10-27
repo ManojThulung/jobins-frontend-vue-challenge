@@ -10,7 +10,7 @@ import { ChevronUpIcon } from "../../assets/icon";
 
 const props = defineProps({
   options: Array,
-  selected: String,
+  selected: [String, Number],
   setSelected: Function,
   className: {
     type: String,
@@ -21,7 +21,7 @@ const props = defineProps({
 
 <template>
   <div
-    :class="`rounded-[5px] shadow-sm h-11 bg-white ${className} relative text-[13px] sm:text-[15px] border-[2px] border-transparent hover:border-secondary-light/40 duration-150 ease-in`"
+    :class="`rounded-[5px] shadow-sm h-11 bg-white ${props.class} relative text-[13px] sm:text-[15px] border-[2px] border-transparent hover:border-secondary-light/40 duration-150 ease-in`"
   >
     <Listbox v-model="props.selected">
       <div class="relative mt-1">
