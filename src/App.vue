@@ -9,7 +9,7 @@ import Header from "./components/layout/Header.vue";
     class="relative min-h-screen flex flex-row bg-light text-secondary overflow-hidden"
   >
     <Sidebar />
-    <div class="flex-1 w-full px-6 py-4 pb-10 overflow-hidden">
+    <div class="flex-1 w-full px-6 py-4 pb-24 overflow-hidden">
       <Header />
       <RouterView />
     </div>
